@@ -26,12 +26,13 @@ background-color: red;
 .header-right{
     background-color: blueviolet;
     width: 100%;
-    height: 70px;
+    height: 70px; 
     position: fixed;
 }
 
 .main-right{
-    height:calc(100vh - 70px);
+    height:calc(100vh - 140px);
+    margin-top: 70px;
     width: 100%;
    background-color: coral;
 }
@@ -39,8 +40,9 @@ background-color: red;
 .footer-right{
     background-color: blue;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     z-index: 1;
     position: fixed; 
+    bottom: 0;
     
 }
