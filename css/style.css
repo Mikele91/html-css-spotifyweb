@@ -22,6 +22,9 @@ a{
 .nav-left{ 
     height: calc(100vh - 70px);
     width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -54,10 +57,8 @@ padding: 15px 10px;
     border-left: 2px solid #adff2f ;
 } 
 
-.container-nav-main-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.container-nav-header-main-footer{
+   
     
 }
 
