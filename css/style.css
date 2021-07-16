@@ -61,7 +61,8 @@ padding: 15px 10px;
 }
 .nav-left-main{
     overflow: hidden;
-    flex-grow: 1;
+    /* overflow-y: auto; */
+    
 
     
 }
@@ -77,14 +78,15 @@ padding: 15px 10px;
 }
 
 .nav-left-list{
-    /* overflow-y: auto;  NON FUNZIONA */
+    flex-grow: 1;
+    overflow-y: auto; 
+    list-style: none; 
+   
 
-
- list-style: none; 
 }
 
 .nav-left-list li{
-    overflow-y: auto;   
+    /* overflow-y: auto;    */
 
     margin: 10px 0;
 }
@@ -153,7 +155,7 @@ padding: 15px 50px;
 border-radius: 30px;
 border: 2px solid;
 }
-.btm-header-right:hover{
+.btm-header-right:hover, .fa-play-circle:hover {
     transform : scale(1.1);
 }
 
