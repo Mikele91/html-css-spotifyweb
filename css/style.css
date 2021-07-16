@@ -153,6 +153,9 @@ padding: 15px 50px;
 border-radius: 30px;
 border: 2px solid;
 }
+.btm-header-right:hover{
+    transform : scale(1.1);
+}
 
 
 
@@ -207,11 +210,14 @@ border: 2px solid;
 }
 .title-section{
     padding: 40px  20px;
-    font-size: large;  
+    /* font-size: large;  */
+    font-weight: 700; 
 }
 .subtitle-section{
-    font-size: 10px;
+    font-weight: 400;
+    font-size: 10px; 
     padding-top: 15px;
+    color: lightgrey;
 }
 
 .album
@@ -231,6 +237,7 @@ border: 2px solid;
 }
 
  .img-container:hover::after{
+    cursor: pointer;
     content: "\f144";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -244,8 +251,16 @@ border: 2px solid;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
+    
 
 
+}
+.text-album{
+    font-weight: 700;
+    margin: 8px 0;
+}
+.subtitle-album{
+    font-size: 10px;
 }
 .circle{
     border-radius: 50%;
@@ -272,7 +287,7 @@ border: 2px solid;
 width: 230px ;
 flex-shrink: 0;
 }
-.play-bar-left, .img-play-bar-left{
+.play-bar-left, .img-play-bar-left, .sound-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -285,7 +300,7 @@ flex-shrink: 0;
     font-size: 10px;
 }
 
-.icons-play-bar-left i{
+.icons-play-bar-left i, .icons-play-bar-right i{
     margin-left: 8px;
 
 }
@@ -299,4 +314,53 @@ flex-shrink: 0;
 }
 .fa-play-circle{
     font-size: 30px;
+}
+
+.sound-bar{
+    margin:0 5px ;
+}
+.player-bar, .player-bar-sound{
+     width: 300px; 
+    height: 5px;
+    border-radius: 50px;
+    margin:0 8px ;
+    
+
+    background-color: grey;
+    /* outline: none; non so cosa sia*/ 
+}
+.player-bar-color{
+    cursor: pointer;
+    width: 30%;
+    height: 100%;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.player-bar:hover .player-bar-color{
+    background-color:yellowgreen
+}
+.player-bar:hover .player-bar-color::after{
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 0;
+}
+.player-bar-color:active{
+    width: 100%;
+    transition: 0.4s;
+}
+.play-bar-right{
+    display: flex;
+    align-items: center;
+}
+
+.player-bar.sound{
+width: 100px;
+
 }
