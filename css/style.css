@@ -56,12 +56,12 @@ padding: 15px 10px;
 
 
 
-.nav-left-main, .nav-left-footer{
+.nav-left-main, .nav-left-footer, .nav-left-list{
     padding: 15px ;
 }
 .nav-left-main{
     overflow: hidden;
-    /* overflow-y: auto; */
+    
     
 
     
