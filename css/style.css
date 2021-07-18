@@ -14,7 +14,40 @@ main{
 }
 a{
     text-decoration: none;
+    color: #7e7e7e;
+
+}
+/* Hover cursor color  */
+
+.nav-left-header a:hover, h4:hover, .nav-left-main i:hover, .nav-left-main div:hover, .nav-left-list li:hover, .row-left-footer-1:hover a, .row-left-footer-2:hover span,.btm-header-right:hover, .nav-main-right div a:hover{
     color: white;
+    cursor: pointer;
+}
+.img-play-bar-left img:hover{
+    transform : scale(1.1);
+}
+.fa-heart:hover{
+    color: red;
+    transform : scale(1.1);
+    
+}
+.fa-folder:hover{
+    transform : scale(1.1);
+    color: seagreen;
+}
+.btm-header-right:hover, .fa-play-circle:hover {
+    transform : scale(1.1);
+}
+
+.player-bar:hover .player-bar-color{
+    background-color:yellowgreen
+}
+
+
+/* click */
+.simble-play-bar-center i:active, .icons-play-bar-right i:active{
+    color: yellowgreen;
+    transform : scale(1.1);
 }
 
 /* nav-left */
@@ -25,7 +58,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    color: #7e7e7e;
 }
 
 .logo-nav{
@@ -52,7 +85,17 @@ padding: 15px 10px;
     padding-left: 18px;
     margin-left: 0;
     border-left: 2px solid #adff2f ;
+    /* color: white; */
 } 
+.img-home  a{
+    color: white; 
+}
+
+/* .nav-left-header a:hover{
+    color: white;
+    cursor: pointer;
+} */
+
 
 
 
@@ -61,11 +104,23 @@ padding: 15px 10px;
 }
 .nav-left-main{
     overflow: hidden;
-    
+      
+}
+h4{
+    padding: 10px 0 0 18px;
+}
+.nav-left-main {
+display: flex;
+align-items: center;
+}
     
 
-    
-}
+ /* h4:hover, .nav-left-main i:hover, .nav-left-main div:hover{
+    color: white;
+    cursor: pointer;
+
+} */
+
 .nav-left-header, .logo-nav, .nav-left-footer{
     flex-shrink: 0;
 }
@@ -90,6 +145,11 @@ padding: 15px 10px;
 
     margin: 10px 0;
 }
+/* .nav-left-list li:hover{
+    color: white;
+    cursor: pointer;
+
+} */
 
 
 /* footer left  */
@@ -103,6 +163,7 @@ padding: 15px 10px;
     
     width: 30px;
 }
+
 .row-left-footer-2 {
     margin-top: 5px;
     align-items: center;
@@ -155,9 +216,7 @@ padding: 15px 50px;
 border-radius: 30px;
 border: 2px solid;
 }
-.btm-header-right:hover, .fa-play-circle:hover {
-    transform : scale(1.1);
-}
+
 
 
 
@@ -254,8 +313,6 @@ border: 2px solid;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
     
-
-
 }
 .text-album{
     font-weight: 700;
@@ -339,9 +396,7 @@ flex-shrink: 0;
     position: relative;
 }
 
-.player-bar:hover .player-bar-color{
-    background-color:yellowgreen
-}
+
 .player-bar:hover .player-bar-color::after{
     content: "";
     display: block;
