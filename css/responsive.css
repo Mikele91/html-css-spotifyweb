@@ -1,0 +1,5 @@
+@media screen and (max-width: 991.98px) {
+    .album-md{
+        width: calc(100% / 4 );
+    }
+}
